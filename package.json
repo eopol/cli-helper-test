@@ -1,0 +1,36 @@
+{
+  "name": "cli-helper-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "simple-git-hooks",
+    "clean": "run-s clean:**",
+    "clean:root-cache": "rimraf pnpm-lock.yaml && rimraf node_modules",
+    "commit": "czg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/prettier": "^2.7.2",
+    "@unconfig/commitlint-config": "latest",
+    "@unconfig/eslint-config": "latest",
+    "@unconfig/lint-staged-config": "latest",
+    "@unconfig/prettier-config": "latest",
+    "@unconfig/simple-git-hooks-config": "latest",
+    "@unconfig/ts-config": "latest",
+    "@vitest/ui": "^0.28.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.1",
+    "tsx": "^3.12.2",
+    "typescript": "^4.9.4",
+    "vitest": "^0.28.3",
+    "npminstall": "^7.4.1"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7"
+  }
+}

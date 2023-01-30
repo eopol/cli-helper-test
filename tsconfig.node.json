@@ -1,0 +1,18 @@
+{
+  "extends": "@unconfig/ts-config/node.esm.json",
+  "compilerOptions": {
+    "composite": true
+  },
+  "include": [
+    "**/build.config.ts",
+    "src/**/*",
+    "typings/**/*"
+  ],
+  "exclude": [
+    "**/__tests__/**",
+    "**/tests/**",
+    "node_modules",
+    "**/dist",
+    "**/*.md"
+  ]
+}
