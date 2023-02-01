@@ -1,0 +1,4 @@
+ls -al|grep node_modules
+
+echo $1
+echo $2
