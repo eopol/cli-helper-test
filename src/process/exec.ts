@@ -47,3 +47,14 @@ execFile(
     console.error(`execFile stderr: ${stderr}`)
   }
 )
+
+async function test() {
+  const { stdout, stderr } = await execFile(
+    resolve(__dirname, './exec.shell'),
+    ['-l1', '-l2']
+  )
+
+  console.log(`execFile stdout: ${stdout}`)
+  console.error(`execFile stderr: ${stderr}`)
+}
+test()
