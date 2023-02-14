@@ -1,5 +1,8 @@
 import { exec, spawn } from 'node:child_process'
-import { resolve } from 'node:path'
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const child = spawn(resolve(__dirname, 'spawn.shell'), ['l1', 'l2'], {
   cwd: resolve('..'),

@@ -1,5 +1,8 @@
 import { exec, execFile } from 'node:child_process'
-import { resolve } from 'node:path'
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const child = exec('ls -al', (err, stdout, stderr) => {
   if (err) {
