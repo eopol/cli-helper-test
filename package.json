@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "simple-git-hooks",
+    "debug": "node src/debug-process/exec.mjs",
     "clean": "run-s clean:**",
     "clean:root-cache": "rimraf pnpm-lock.yaml && rimraf node_modules",
     "commit": "czg"
