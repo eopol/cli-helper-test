@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
     "@types/node": "*",
     "@types/prettier": "^2.7.2",
     "@unconfig/commitlint-config": "latest",
@@ -23,12 +24,14 @@
     "@unconfig/simple-git-hooks-config": "latest",
     "@unconfig/ts-config": "latest",
     "@vitest/ui": "^0.28.3",
+    "inquirer": "^9.1.4",
     "npm-run-all": "^4.1.5",
+    "npminstall": "^7.4.1",
+    "ora": "^6.1.2",
     "rimraf": "^4.1.1",
     "tsx": "^3.12.2",
     "typescript": "^4.9.4",
-    "vitest": "^0.28.3",
-    "npminstall": "^7.4.1"
+    "vitest": "^0.28.3"
   },
   "engines": {
     "node": ">=18",
