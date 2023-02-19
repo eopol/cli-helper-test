@@ -6,6 +6,7 @@
   "scripts": {
     "postinstall": "simple-git-hooks",
     "debug": "node src/debug-process/exec.mjs",
+    "debug:ora": "pnpm tsx src/ora/index.mjs",
     "clean": "run-s clean:**",
     "clean:root-cache": "rimraf pnpm-lock.yaml && rimraf node_modules",
     "commit": "czg"

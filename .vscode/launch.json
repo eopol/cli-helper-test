@@ -11,7 +11,7 @@
       "skipFiles": [
         // "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/src/debug-process/exec.mjs"
+      "program": "${workspaceFolder}/src/ora/index.ts"
     }
   ]
 }
