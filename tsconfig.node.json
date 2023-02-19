@@ -1,7 +1,9 @@
 {
   "extends": "@unconfig/ts-config/node.esm.json",
   "compilerOptions": {
-    "composite": true
+    "composite": true,
+    "target": "ESNext",
+    "module": "ESNext",
   },
   "include": [
     "**/build.config.ts",
