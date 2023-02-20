@@ -7,6 +7,7 @@
     "postinstall": "simple-git-hooks",
     "debug": "node src/debug-process/exec.mjs",
     "debug:ora": "pnpm tsx src/ora/index.mjs",
+    "debug:ejs": "node src/ejs/package.mjs",
     "clean": "run-s clean:**",
     "clean:root-cache": "rimraf pnpm-lock.yaml && rimraf node_modules",
     "commit": "czg"
@@ -15,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/ejs": "^3.1.2",
     "@types/inquirer": "^9.0.3",
     "@types/node": "*",
     "@types/prettier": "^2.7.2",

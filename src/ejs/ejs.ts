@@ -29,10 +29,10 @@ console.log(compiledTemplate2)
 const renderedTemplate = ejs.render(html, data, options)
 console.log(renderedTemplate)
 
-// 第三种，编译文件
-const renderedFile = await ejs.renderFile(
-  resolve(__dirname, './index.html'),
-  data,
-  options
-)
-console.log(renderedFile)
+// // 第三种，编译文件
+// const renderedFile = await ejs.renderFile(
+//   resolve(__dirname, './index.html'),
+//   data,
+//   options
+// )
+// console.log(renderedFile)
