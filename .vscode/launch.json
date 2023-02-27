@@ -11,7 +11,7 @@
       "skipFiles": [
         // "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/src/ejs/package.mjs"
+      "program": "${workspaceFolder}/src/require-orignal.js"
     }
   ]
 }
